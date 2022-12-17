@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Satisfy&display=swap');
+
+/* Всі кольори */
+:root{
+    --black: black;
+    --back-hover: rgba(5, 2, 5, 0.1);
+    --back-zero: rgba(0,0,0,0.0);
+    --ellow: #F0ED3F;
+    --orange: #DC8C09;
+    --wheat: wheat;
+    --grad: -webkit-radial-gradient(var(--ellow), var(--orange));
+}
+/* Всі кольори */
+
+
+/* Скролбар */
+::-webkit-scrollbar{
+    display: inline;
+    background-color: var(--orange);
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--orange);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--back-hover);
+}
+/* Скролбар */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Satisfy', cursive;
+
+    font-size: 14px;
+    font-weight: 300;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: var(--grad);
+}
+
+
+/*  Для всех с класом btn */
+.btn {
+    color: var(--black);
+    border: none;
+    background-color: none;
+
+    transition: all .17s linear;
+}
+
+.btn:hover {
+    text-shadow: .2rem .03rem .55rem #000;
+    background-color: var(--back-hover);
+
+    transition: all .17s linear;
+}
+/*  Для всех с класом btn */
+
+
+/* Header list */
+.header {
+    text-align: center;
+
+    padding: 0.5rem;
+
+    background-color: var(--back-zero);
+}
+
+.header_title {
+    font-size: 2.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.header_links {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.header_link {
+    padding: .1rem 5rem;
+}
+/* Header list */
+
+
+
+
+/* Candels and hany lists */
+.main_list {
+    width: 80%;
+    height: 700px;
+
+    margin-bottom: 4rem;
+
+    border-radius:  var(--border-rad);
+    background-color: var(--wheat);
+}
+
+.candels_list {
+    width: 100%;
+    height: 100%;
+    background-color:chartreuse;
+}
+
+.hany_list {
+    width: 100%;
+    height: 100%;
+    background-color:brown;
+}
+
+/* Candels and hany lists */
