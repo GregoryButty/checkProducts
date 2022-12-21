@@ -12,6 +12,7 @@
 }
 /* Всі кольори */
 
+/* ======================= */
 
 /* Скролбар */
 ::-webkit-scrollbar{
@@ -29,7 +30,9 @@
 }
 /* Скролбар */
 
+/* ======================= */
 
+/* Ко всей страничке */
 * {
     margin: 0px;
     padding: 0px;
@@ -56,25 +59,27 @@ body {
 
     background: var(--grad);
 }
+/* Ко всей страничке */
 
+/* ======================= */
 
 /*  Для всех с класом btn */
 .btn {
     color: var(--black);
     border: none;
-    background-color: none;
+    background-color: var(--back-hover);
 
-    transition: all .17s linear;
+    transition: .09s linear;
 }
 
 .btn:hover {
-    text-shadow: .2rem .03rem .55rem #000;
-    background-color: var(--back-hover);
+    text-shadow: .1rem .03rem .3rem var(--black);
 
-    transition: all .17s linear;
+    transition: .11s linear;
 }
 /*  Для всех с класом btn */
 
+/* ======================= */
 
 /* Header list */
 .header {
@@ -101,30 +106,105 @@ body {
 }
 /* Header list */
 
-
-
+/* ======================= */
 
 /* Candels and hany lists */
 .main_list {
     width: 80%;
-    height: 700px;
+    height: auto;
 
     margin-bottom: 4rem;
 
-    border-radius:  var(--border-rad);
-    background-color: var(--wheat);
+    border-left: .12rem solid;
+    border-right: .12rem solid;
+    background-color: var(--back-hover);
 }
 
-.candels_list {
+.main_list .candels_list {
     width: 100%;
     height: 100%;
-    background-color:chartreuse;
+    /* background-color:chartreuse; */
 }
 
-.hany_list {
+.main_list .hany_list {
     width: 100%;
     height: 100%;
-    background-color:brown;
+    /* background-color:brown; */
+}
+
+.main_list .other_list {
+    width: 100%;
+    height: 100%;
+    /* background-color:cornflowerblue; */
 }
 
 /* Candels and hany lists */
+
+/* ======================= */
+
+/*  Коробочк с продуктами  */
+
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxes_products {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: .5rem;
+    padding: .3rem;
+
+    background-color: cornsilk;
+
+    transform: scale(0.985);
+    transition: .09s linear;
+}
+
+.boxes_products:hover {
+    box-shadow: 0rem 0rem 0.5rem white;
+    transform: scale(1);
+    transition: .11s linear;
+}
+
+.boxes_products .img_product {
+    width: 9rem;
+    height: 18rem;
+}
+
+.boxes_products .info_product {
+    margin: .7rem 0;
+
+}
+
+.boxes_products .info_product .name_product{
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 1.6rem;
+
+}
+
+.boxes_products .info_product .list_product{
+    list-style-type: none;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.boxes_products .chose_product {
+    font-size: 1.2rem;
+
+    padding: .2rem 0;
+}
+
+.boxes_products .chose_product:hover {
+    border-radius: .45rem;
+    background-color: rgba(92, 233, 38 , 0.7);
+}
+

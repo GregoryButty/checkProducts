@@ -1,63 +1,66 @@
-
-
-// Теперь ета переменная хронит в себе путь к '.main_list'
-// let wayToMainList = document.body.querySelector('.main_list');
-
-// При клике вилазет divCandels или divHony
-// btnCandels.addEventListener('click', function(e) {
-//     let divCandels = document.createElement('div');
-//     divCandels.classList = 'divCandels';
-
-//     if (!wayToMainList.querySelector('.divCandels')) {
-//         wayToMainList.appendChild(divCandels);
-//     }
-//     if (wayToMainList.querySelector('.divHony')) {
-//         wayToMainList.removeChild(document.querySelector('.divHony'));
-//     }
-// })
-
-// btnHany.addEventListener('click', function(e) {
-//     let divHony = document.createElement('div');
-//     divHony.classList = 'divHony';
-
-//     if (!wayToMainList.querySelector('.divHony')) {
-//         wayToMainList.appendChild(divHony);
-//     }
-//     if (wayToMainList.querySelector('.divCandels')) {
-//         wayToMainList.removeChild(document.querySelector('.divCandels'))
-//     }
-// })
-
+// На ходим кнопки
 const btnCandels = document.getElementById('candels');
 const btnHany = document.getElementById('hanyes');
+const btnOther = document.getElementById('other');
+
+// На ходим листи свече и меда
 let candelsList = document.querySelector('.candels_list');
 let hanyList = document.querySelector('.hany_list');
+let otherList = document.querySelector('.other_list');
 
+
+// При срабативание скрипта страничка с медом не отображаеться
 hanyList.style.display = 'none';
+otherList.style.display = 'none';
+btnCandels.style.textShadow = '0.1rem 0.03rem 0.3rem #000';
 
 // При клике отображаеться candelsList или hanyList
 btnCandels.addEventListener('click', function() {
     hanyList.style.display = 'none';
-    candelsList.style.display = 'flex';
+    otherList.style.display = 'none';
+    candelsList.style.display = 'block';
 
-    // Немяем backengraund
-    if (candelsList.style.display === 'flex') {
-        btnCandels.style.backgroundColor = 'rgba(5, 2, 5, 0.1)'
+    // Немяем textShadow
+    if (candelsList.style.display === 'block') {
+        btnCandels.style.textShadow = '0.1rem 0.03rem 0.3rem #000';
     }
     if (hanyList.style.display === 'none') {
-        btnHany.style.backgroundColor = 'rgba(0, 0, 0, 0.0)'
+        btnHany.style.textShadow = '0rem 0rem 0rem #000';
+    }
+    if (otherList.style.display === 'none') {
+        btnOther.style.textShadow = '0rem 0rem 0rem #000';
     }
 })
 
-btnHany.addEventListener('click', function (e) {
+btnHany.addEventListener('click', function () {
     candelsList.style.display = 'none';
-    hanyList.style.display = 'flex';
+    otherList.style.display = 'none';
+    hanyList.style.display = 'block';
 
-    // Немяем backengraund
-    if (hanyList.style.display === 'flex') {
-        btnHany.style.backgroundColor = 'rgba(5, 2, 5, 0.1)'
+    // Немяем textShadow
+    if (hanyList.style.display === 'block') {
+        btnHany.style.textShadow = '0.1rem 0.03rem 0.3rem #000';
     }
     if (candelsList.style.display === 'none') {
-        btnCandels.style.backgroundColor = 'rgba(0, 0, 0, 0.0)'
+        btnCandels.style.textShadow = '0rem 0rem 0rem #000';
+    }
+    if (otherList.style.display === 'none') {
+        btnOther.style.textShadow = '0rem 0rem 0rem #000';
+    }
+})
+
+btnOther.addEventListener('click', function() {
+    candelsList.style.display = 'none';
+    hanyList.style.display = 'none';
+    otherList.style.display = 'block';
+
+    if (otherList.style.display === 'block') {
+        btnOther.style.textShadow = '0.1rem 0.03rem 0.3rem #000';
+    }
+    if (candelsList.style.display === 'none') {
+        btnCandels.style.textShadow = '0rem 0rem 0rem #000';
+    }
+    if (hanyList.style.display === 'none') {
+        btnHany.style.textShadow = '0rem 0rem 0rem #000';
     }
 })
