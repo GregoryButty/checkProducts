@@ -12,7 +12,7 @@ let otherList = document.querySelector('.other_list');
 // При срабативание скрипта страничка с медом не отображаеться
 hanyList.style.display = 'none';
 otherList.style.display = 'none';
-btnCandels.style.textShadow = '0.1rem 0.03rem 0.3rem #000';
+btnCandels.style.textShadow = '0rem 0rem 0.3rem #000';
 
 // При клике отображаеться candelsList или hanyList
 btnCandels.addEventListener('click', function() {
@@ -22,7 +22,7 @@ btnCandels.addEventListener('click', function() {
 
     // Немяем textShadow
     if (candelsList.style.display === 'block') {
-        btnCandels.style.textShadow = '0.1rem 0.03rem 0.3rem #000';
+        btnCandels.style.textShadow = '0rem 0rem 0.3rem #000';
     }
     if (hanyList.style.display === 'none') {
         btnHany.style.textShadow = '0rem 0rem 0rem #000';
@@ -39,7 +39,7 @@ btnHany.addEventListener('click', function () {
 
     // Немяем textShadow
     if (hanyList.style.display === 'block') {
-        btnHany.style.textShadow = '0.1rem 0.03rem 0.3rem #000';
+        btnHany.style.textShadow = '0rem 0rem 0.3rem #000';
     }
     if (candelsList.style.display === 'none') {
         btnCandels.style.textShadow = '0rem 0rem 0rem #000';
@@ -55,7 +55,7 @@ btnOther.addEventListener('click', function() {
     otherList.style.display = 'block';
 
     if (otherList.style.display === 'block') {
-        btnOther.style.textShadow = '0.1rem 0.03rem 0.3rem #000';
+        btnOther.style.textShadow = '0rem 0rem 0.3rem #000';
     }
     if (candelsList.style.display === 'none') {
         btnCandels.style.textShadow = '0rem 0rem 0rem #000';
