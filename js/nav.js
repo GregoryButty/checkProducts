@@ -1,20 +1,20 @@
-// На ходим кнопки
+// На ходимо кнопки
 const btnCandels = document.getElementById('candels');
 const btnHany = document.getElementById('hanyes');
 const btnOther = document.getElementById('other');
 
-// На ходим листи свече и меда
+// На ходимо листи свічок та меду
 let candelsList = document.querySelector('.candels_list');
 let hanyList = document.querySelector('.hany_list');
 let otherList = document.querySelector('.other_list');
 
 
-// При срабативание скрипта страничка с медом не отображаеться
+// При роботи скрипта сторінка з медом не відображається
 hanyList.style.display = 'none';
 otherList.style.display = 'none';
 btnCandels.style.textShadow = '0rem 0rem 0.3rem #000';
 
-// При клике отображаеться candelsList или hanyList
+// При натисканні відоюражається candelsList чи hanyList чи otherList
 btnCandels.addEventListener('click', function() {
     hanyList.style.display = 'none';
     otherList.style.display = 'none';
