@@ -1,0 +1,18 @@
+/* Всі кольори */
+:root{
+    --black: black;
+    --gray: gray;
+    --wheat: wheat;
+
+    --ellow: #F0ED3F;
+    --orange: #DC8C09;
+
+    --red: rgb(193, 28, 28);
+    --green: rgb(50, 169, 50);
+
+    --black-window: rgba(0, 0, 0, 0.1);
+    --light-window: rgba(255, 255, 255, 0.1);
+
+    --grad60: linear-gradient(60deg, rgb(93, 6, 86) 10%, rgb(164, 15, 137) 50%, rgb(207, 27, 204) 200%);
+}
+/* Всі кольори */

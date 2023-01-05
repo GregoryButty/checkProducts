@@ -1,0 +1,252 @@
+/* ======================= */
+
+/* Header list */
+.header {
+    text-align: center;
+
+    padding: 0.5rem;
+}
+
+.header_title {
+    font-size: 2.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.header_links {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.header_link {
+    padding: .1rem 5rem;
+}
+/* Header list */
+
+/* ======================= */
+
+/* Candels and hany window */
+.main_window {
+    width: 70%;
+    height: auto;
+
+    margin-bottom: 4rem;
+    padding: .5rem;
+
+    border-left: .12rem solid;
+    border-right: .12rem solid;
+    background-color: var(--black-window);
+}
+
+.main_window .candels_window {
+    width: 100%;
+    height: 100%;
+    /* background-color:chartreuse; */
+}
+
+.main_window .hany_window {
+    width: 100%;
+    height: 100%;
+    /* background-color:brown; */
+}
+
+.main_window .other_window {
+    width: 100%;
+    height: 100%;
+    /* background-color:cornflowerblue; */
+}
+
+/* Candels and hany window */
+
+/* ======================= */
+
+/*  Коробочки с продуктами  */
+
+.conteiner {
+    width: 100%;
+}
+
+.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.box_product {
+    width: 47%;
+    height: auto;
+
+    margin: .5rem;
+
+    list-style-type: none;
+}
+
+.items_products {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+
+    padding: .5rem;
+
+    border-radius: .15rem;
+    background: var(--light-window);
+
+    transform: scale(1);
+    transition: .17s linear;
+}
+
+.items_products:hover {
+    padding: .5rem .9rem;
+
+    transform: scale(1.02);
+    transition: .12s linear;
+
+    box-shadow: 0rem 0rem .9rem var(--black);
+}
+
+.items_products .img_product {
+    width: 6rem;
+    height: 13rem;
+}
+
+.items_products .info_product {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: .5rem;
+}
+
+.items_products .info_product .tex_product {
+    height: 100%;
+
+    padding: .5rem;
+
+    border-radius: .15rem;
+    background: var(--black-window);
+}
+
+.items_products .info_product .tex_product .name_product {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.items_products .info_product .tex_product .list_product {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+
+    list-style-type: none;
+
+    margin-left: .5rem;
+}
+
+.items_products .info_product .tex_product .paragraph_product {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+
+    text-align: end;
+    margin-top: 1.7rem;
+}
+
+.items_products .info_product .btn_product {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.01rem;
+    font-weight: 400;
+
+    padding: .15rem 0rem;
+    margin-top: .5rem;
+
+    border-radius: .15rem;
+}
+
+.items_products .info_product .btn_product:hover {
+    font-size: 1.03rem;
+    font-weight: 500;
+
+}
+
+/*  Коробочки с продуктами  */
+
+/* ======================= */
+
+/*  Нижня навігація  */
+.down_header {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+
+    padding: 1rem 3rem;
+
+    background-color: var(--black-window);
+}
+
+.down_header .left_pice {
+    width: 17em;
+}
+
+.down_header .left_pice .header_title {
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+}
+
+.down_header .left_pice .text_down_header {
+    margin-top: 1rem;
+    margin-left: 3rem;
+
+    font-size: 1.2rem;
+
+}
+
+.down_header .left_pice .text_down_header .numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.down_header .left_pice .text_down_header .numbers .number {
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+.down_header .left_pice .text_down_header .numbers .number img{
+    width: 1.3rem;
+    height: 1.3rem;
+
+    margin-right: 1rem;
+}
+
+.down_header .right_pice {
+    width: 100%;
+
+    text-align: right;
+}
+
+.down_header .right_pice .header_title {
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+}
+
+.down_header .right_pice .text_down_header {
+    margin-top: 1rem;
+    margin-left: 3rem;
+
+    font-size: 1.2rem;
+}
+
+.down_header .right_pice .text_down_header .numbers {
+    margin-top: .5rem;
+}
+
+.down_header .right_pice .text_down_header .numbers .number img {
+    width: 1.3rem;
+    height: 1.3rem;
+
+    margin-right: 1rem;
+}
+/*  Нижня навігація  */

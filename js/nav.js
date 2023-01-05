@@ -4,9 +4,9 @@ const btnHany = document.getElementById('hanyes');
 const btnOther = document.getElementById('other');
 
 // На ходимо листи свічок та меду
-let candelsList = document.querySelector('.candels_list');
-let hanyList = document.querySelector('.hany_list');
-let otherList = document.querySelector('.other_list');
+let candelsList = document.querySelector('.candels_window');
+let hanyList = document.querySelector('.hany_window');
+let otherList = document.querySelector('.other_window');
 
 
 // При роботи скрипта сторінка з медом не відображається
